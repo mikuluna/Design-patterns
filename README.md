@@ -2,7 +2,7 @@
 java设计模式
 首先把涉及模式分为了三个类型：创建型模式（Creational Patterns）、结构型模式（Structural Patterns）、行为型模式（Behavioral Patterns）。
 ## 	创建型模式
-- [工厂模式（Factory Pattern](https://github.com/mikuluna/Design-patterns/raw/master/01-Creational Patterns/Factory%2dPattern/Factory%2dPattern.md)
+- [工厂模式（Factory Pattern)](https://github.com/mikuluna/Design-patterns/raw/master/01-Creational%2dPatterns/Factory%2dPattern/Factory%2dPattern.md)
 - 抽象工厂模式（Abstract Factory Pattern）
 - 单例模式（Singleton Pattern）
 - 建造者模式（Builder Pattern）
