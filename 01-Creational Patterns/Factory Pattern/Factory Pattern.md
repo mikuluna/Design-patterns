@@ -119,4 +119,4 @@ public class FruitFactory extends FruitStore {
 ```
 ## 现实运用
 spring中ApplicationContext及子类的对于工厂方法的使用
-![ApplicationContext]("https://github.com/mikuluna/Design-patterns/raw/master/img/gongchang.png")
+![ApplicationContext]("https://raw.githubusercontent.com/mikuluna/Design-patterns/master/img/gongchang.png")
