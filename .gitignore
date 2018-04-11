@@ -1,0 +1,6 @@
+*.class
+*misc.xml
+*.iml
+modules.xml
+uiDesigner.xml
+workspace.xml
