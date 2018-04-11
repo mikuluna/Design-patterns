@@ -115,7 +115,7 @@ public class FruitFactory extends FruitStore {
         Object obj = cls.newInstance();
         return (Fruit) obj;
     }
-}
+} 
 ```
 ## 现实运用
 spring中ApplicationContext及子类的对于工厂方法的使用
