@@ -302,6 +302,12 @@ public class LunaHaveAMeal {
     }
 }
 ```
+
+最后打印结果：  
+在点餐！麦当鸡的炸鸡套餐，包括：cola,fried drumstick  
+饿了！在吃！！！麦当鸡的炸鸡套餐，包括：cola,fried drumstick  
+在点餐！肯打鸡的汉堡套餐，包括：cola,beef burger,chips  
+饿了！在吃！！！肯打鸡的汉堡套餐，包括：cola,beef burger,chips  
 ### 总结
 很欢乐的写完了抽象工厂模式。（本故事纯属虚构，作者吃不了那么多的，但是减肥是真的）  
 下面我要贴的东西，是别人总结的，关于简单工厂，工厂方法，抽象工厂的区别。
