@@ -217,7 +217,7 @@ public class McdonFriedChickenMeal implements IFriedChickenMeal {
 }
 ```
 ### !!抽象工厂接口IFactory与麦当鸡工厂和肯打鸡工厂
-前面都是铺垫，这里才是抽象工厂的重点！  
+前面都是铺垫，这里才是抽象工厂的重点!在factory（package）   
 IFactory抽象工厂接口
 ```
 /**
