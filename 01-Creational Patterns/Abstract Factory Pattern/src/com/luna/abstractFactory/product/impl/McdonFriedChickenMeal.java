@@ -1,0 +1,23 @@
+package com.luna.abstractFactory.product.impl;
+
+import com.luna.abstractFactory.model.FriedChickenMeal;
+import com.luna.abstractFactory.product.IFriedChickenMeal;
+
+/**
+ * 麦当鸡炸鸡套餐
+ */
+public class McdonFriedChickenMeal implements IFriedChickenMeal {
+
+    @Override
+    public void order(FriedChickenMeal friedChickenMeal) {
+        System.out.println("在点餐！麦当鸡的炸鸡套餐，包括："+friedChickenMeal.getDrink()+","
+                +friedChickenMeal.getFriedChicken());
+    }
+
+    @Override
+    public void eat(FriedChickenMeal friedChickenMeal) {
+        System.out.println("饿了！在吃！！！麦当鸡的炸鸡套餐，包括："+friedChickenMeal.getDrink()+","
+                +friedChickenMeal.getFriedChicken());
+
+    }
+}
