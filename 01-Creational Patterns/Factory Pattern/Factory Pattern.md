@@ -121,10 +121,10 @@ public class FruitFactory extends FruitStore {
 spring中ApplicationContext及子类的对于工厂方法的使用
 ![](https://github.com/mikuluna/Design-patterns/raw/master/img/gongchang.png)
 ## 补充（简单工厂与工厂方法）
-上述代码与反射结合之前，是一个简单工厂形式。（劣势在于，新增一个水果都要每次去改工厂）
-所以！就出现了工厂方法！那么他们有什么区别呢？其实只用记住一句话就行了：工厂方法比起简单工厂的优势在于新增！
-这时我们又会有一个疑问，工厂方法需要怎么来实现呢？
-其实很简单。就是把Apple、Banana和Orange分别作为一个工厂的实现。（原FruitFactory变成了AppleFactory、BananaFactory和OrangeFactory）
+上述代码与反射结合之前，是一个简单工厂形式。（劣势在于，新增一个水果都要每次去改工厂）  
+所以！就出现了工厂方法！那么他们有什么区别呢？其实只用记住一句话就行了：工厂方法比起简单工厂的优势在于新增！  
+这时我们又会有一个疑问，工厂方法需要怎么来实现呢？  
+其实很简单。就是把Apple、Banana和Orange分别作为一个工厂的实现。（原FruitFactory变成了AppleFactory、BananaFactory和OrangeFactory）  
 ### AppleFactory、BananaFactory和OrangeFactory
 FruitStore修改一下
 ```
@@ -178,5 +178,5 @@ public class TestFactory {
 }
 ```
 ### 总结
-这样是不是看出来简单工厂和工厂方法的区别了吗？按照我的理解。工厂方法比较笨重，但是比起简单工厂可以不断的新加，然而简单工厂新加产品比较麻烦，还需要去改工厂类（违反了开-闭原则）。
+这样是不是看出来简单工厂和工厂方法的区别了吗？按照我的理解。工厂方法比较笨重，但是比起简单工厂可以不断的新加，然而简单工厂新加产品比较麻烦，还需要去改工厂类（违反了开-闭原则）。  
 但是简单工厂+反射 是不是可以说是简单工厂与工厂方法的最优解~
