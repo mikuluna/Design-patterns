@@ -4,7 +4,7 @@ java设计模式
 ## 	创建型模式
 - [工厂模式（Factory Pattern)](01-Creational%20Patterns/Factory%20Pattern/Factory%20Pattern.md) (已完成)
 - [抽象工厂模式（Abstract Factory Pattern)](01-Creational%20Patterns/Abstract%20Factory%20Pattern/Abstract%20Factory%20Pattern.md) (已完成)
-- 单例模式（Singleton Pattern）
+- [单例模式（Singleton Pattern）](01-Creational%20Patterns/Singleton%20Pattern/Singleton%20Pattern.md) (已完成)
 - 建造者模式（Builder Pattern）
 - 原型模式（Prototype Pattern）
 ## 结构型模式
