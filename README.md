@@ -8,7 +8,7 @@ java设计模式
 - [建造者模式（Builder Pattern）](01-Creational%20Patterns/Builder%20Pattern/Builder%20Pattern.md)(已完成)
 - [原型模式（Prototype Pattern）](01-Creational%20Patterns/Prototype%20Pattern/Prototype%20Pattern.md)(已完成)
 ## 结构型模式
-- 适配器模式（Adapter Pattern）
+- [适配器模式（Adapter Pattern）](02-Structural%20Patterns/Adapter%20Pattern/Adapter%20Pattern.md)(已完成)
 - 桥接模式（Bridge Pattern）
 - 过滤器模式（Filter、Criteria Pattern）
 - 组合模式（Composite Pattern）
