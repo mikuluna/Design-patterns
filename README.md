@@ -11,7 +11,7 @@ java设计模式
 - [适配器模式（Adapter Pattern）](02-Structural%20Patterns/Adapter%20Pattern/Adapter%20Pattern.md)(已完成)
 - [桥接模式（Bridge Pattern）](02-Structural%20Patterns/Bridge%20Pattern/Bridge%20Pattern.md)(已完成)
 - [过滤器模式（Filter/Criteria Pattern）](02-Structural%20Patterns/Filter%20Pattern/Filter%20Pattern.md)(已完成)
-- 组合模式（Composite Pattern）
+- [组合模式（Composite Pattern）](02-Structural%20Patterns/Composite%20Pattern/Composite%20Pattern.md)(已完成)
 - 装饰器模式（Decorator Pattern）
 - 外观模式（Facade Pattern）
 - 享元模式（Flyweight Pattern）
