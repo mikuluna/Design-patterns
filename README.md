@@ -12,7 +12,7 @@ java设计模式
 - [桥接模式（Bridge Pattern）](02-Structural%20Patterns/Bridge%20Pattern/Bridge%20Pattern.md)(已完成)
 - [过滤器模式（Filter/Criteria Pattern）](02-Structural%20Patterns/Filter%20Pattern/Filter%20Pattern.md)(已完成)
 - [组合模式（Composite Pattern）](02-Structural%20Patterns/Composite%20Pattern/Composite%20Pattern.md)(已完成)
-- 装饰器模式（Decorator Pattern）
+- [装饰器模式（Decorator Pattern）](02-Structural%20Patterns/Decorator%20Pattern/Decorator%20Pattern.md)(已完成)
 - 外观模式（Facade Pattern）
 - 享元模式（Flyweight Pattern）
 - 代理模式（Proxy Pattern）
