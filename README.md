@@ -15,7 +15,7 @@ java设计模式
 - [装饰器模式（Decorator Pattern）](02-Structural%20Patterns/Decorator%20Pattern/Decorator%20Pattern.md)(已完成)
 - [外观模式（Facade Pattern）](02-Structural%20Patterns/Facade%20Pattern/Facade%20Pattern.md)(已完成)
 - [享元模式（Flyweight Pattern）](02-Structural%20Patterns/Flyweight%20Pattern/Flyweight%20Pattern.md)(已完成)
-- 代理模式（Proxy Pattern）
+- [代理模式（Proxy Pattern）](02-Structural%20Patterns/Proxy%20Pattern/Proxy%20Pattern.md)(已完成)
 ## 行为型模式
 - 责任链模式（Chain of Responsibility Pattern）
 - 命令模式（Command Pattern）
