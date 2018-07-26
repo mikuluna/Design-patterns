@@ -17,7 +17,7 @@ java设计模式
 - [享元模式（Flyweight Pattern）](02-Structural%20Patterns/Flyweight%20Pattern/Flyweight%20Pattern.md)(已完成)
 - [代理模式（Proxy Pattern）](02-Structural%20Patterns/Proxy%20Pattern/Proxy%20Pattern.md)(已完成)
 ## 行为型模式
-- 责任链模式（Chain of Responsibility Pattern）
+- [责任链模式（Chain of Responsibility Pattern）](03-Behavioral%20Patterns/Chain%20of%20Responsibility%20Pattern/Chain%20of%20Responsibility%20Pattern.md)(已完成)
 - 命令模式（Command Pattern）
 - 解释器模式（Interpreter Pattern）
 - 迭代器模式（Iterator Pattern）

@@ -250,6 +250,122 @@ public class RealChain implements Ratify.Chain {
      }
 }
 ```
+### 组长
+```
+/**
+ * 组长
+ */
+public class GroupLeader implements Ratify {
+
+    @Override
+    public Result deal(Chain chain) {
+        Request request = chain.request();
+        System.out.println("=============GroupLeader组长处理request:"+request.toString());
+        //如果天数大于一，交给上级。
+        if(request.days()>1){
+            Request newRequest = new Request.Builder().newRequest(request)
+                    .setManagerInfo(request.name()+"平时表现不错，而且现在也不忙")
+                    .build();
+            return chain.proceed(newRequest);
+        }
+        return new Result(true,"GroupLeader组长：早去早回");
+    }
+}
+```
+### 部门领导
+```
+/**
+ * 部门领导
+ */
+public class DepartmentHeader implements Ratify {
+    @Override
+    public Result deal(Chain chain) {
+        Request request = chain.request();
+        System.out.println("=============DepartmentHeader部门领导request:"
+                + request.toString());
+        if (request.days() > 7) {
+            return new Result(false, "你这个完全没必要");
+        }
+        return new Result(true, "DepartmentHeader：不要着急，把事情处理完再回来！");
+    }
+}
+```
+# 经理
+```
+/**
+ * 经理
+ */
+public class Manager implements Ratify {
+    @Override
+    public Result deal(Chain chain) {
+        Request request = chain.request();
+        System.out.println("=============Manager经理处理request:"+request.toString());
+        //如果天数大于一，交给上级。
+        if(request.days()>3){
+            Request newRequest = new Request.Builder().newRequest(request)
+                    .setManagerInfo(request.name()+"每月的KPI考核还不错，可以批准")
+                    .build();
+            return chain.proceed(newRequest);
+        }
+        return new Result(true,"Manager经理：早点把事情办完，项目离不开你");
+    }
+}
+```
+### 责任链模模式工具类
+```
+/**
+ * 责任链模模式工具类
+ */
+public class ChainOfResponsibilityClient {
+    private List<Ratify> ratifyArrayList;
+    public ChainOfResponsibilityClient(){
+        ratifyArrayList = new ArrayList<Ratify>();
+    }
+
+    /**
+     * 责任链可扩展性
+     * @param ratify
+     */
+    public void addRatifys(Ratify ratify){
+        ratifyArrayList.add(ratify);
+    }
+
+    /**
+     * 执行请求
+     * @param request
+     * @return
+     */
+    public Result execute(Request request){
+        List<Ratify> ratifies = new ArrayList<Ratify>();
+        ratifies.addAll(ratifyArrayList);
+        ratifies.add(new GroupLeader());
+        ratifies.add(new Manager());
+        ratifies.add(new DepartmentHeader());
+        RealChain realChain = new RealChain(ratifies,request,0);
+        return realChain.proceed(request);
+    }
+}
+```
+### 测试类
+```
+public class Test {
+    public static void main(String[] args) {
+        Request request = new Request.Builder().setName("张三").setDays(3)
+                .setReason("事假").build();
+        ChainOfResponsibilityClient client = new ChainOfResponsibilityClient();
+        Result result = client.execute(request);
+        System.out.println("结果："+result.toString());
+    }
+}
+```
+输出
+```
+=============GroupLeader组长处理request:Request [name=张三, reason=事假, days=3,customInfo=null, groupLeaderInfo=null, managerInfo=null, departmentHeaderInfo=null]
+=============Manager经理处理request:Request [name=张三, reason=事假, days=3,customInfo=null, groupLeaderInfo=null, managerInfo=张三平时表现不错，而且现在也不忙, departmentHeaderInfo=null]
+结果：Result [isRatify=true, info=Manager经理：早点把事情办完，项目离不开你]
+```
+
+
 ## 总结
 - 优点
  - 降低耦合度
