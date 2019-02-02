@@ -18,7 +18,7 @@ java设计模式
 - [代理模式（Proxy Pattern）](02-Structural%20Patterns/Proxy%20Pattern/Proxy%20Pattern.md)(已完成)
 ## 行为型模式
 - [责任链模式（Chain of Responsibility Pattern）](03-Behavioral%20Patterns/Chain%20of%20Responsibility%20Pattern/Chain%20of%20Responsibility%20Pattern.md)(已完成)
-- 命令模式（Command Pattern）
+- [命令模式（Command Pattern）](03-Behavioral%20Patterns/Command%20Pattern/Command%20Pattern.md)(已完成)
 - 解释器模式（Interpreter Pattern）
 - 迭代器模式（Iterator Pattern）
 - 中介者模式（Mediator Pattern）
