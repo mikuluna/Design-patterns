@@ -7,7 +7,12 @@ import com.luna.model.Fruit;
  */
 public abstract  class FruitStore {
     public Fruit orderFruit(String type) {
-        Fruit fruit = this.createFruit(type);
+        Fruit fruit = null;
+        try {
+            fruit = this.createFruit(type);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return fruit;
     }
     public abstract Fruit createFruit(String type) throws IllegalAccessException, InstantiationException, Exception;

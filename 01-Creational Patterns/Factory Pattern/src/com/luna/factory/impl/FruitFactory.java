@@ -11,7 +11,7 @@ import com.luna.model.impl.Orange;
  */
 public class FruitFactory extends FruitStore {
 
-//    @Override
+    //    @Override
 //    public Fruit createFruit(String type) {
 //        Fruit fruit = null;
 //        if(type.equals("Apple")){
@@ -27,7 +27,8 @@ public class FruitFactory extends FruitStore {
 //    }
     @Override
     public Fruit createFruit(String type) throws Exception {
-      Class<?> cls = Class.forName(type);
+        String className = "com.luna.model.impl." + type;
+        Class<?> cls = Class.forName(className);
         Object obj = cls.newInstance();
         return (Fruit) obj;
     }
